@@ -1,8 +1,11 @@
 {
   "name": "movie-app",
   "version": "0.1.0",
-  "homepage": "https://ibrhm42.github.io/movies-app/",
+  "homepage": "https://ibrhm42.github.io/imdb",
   "private": true,
+  "engines": {
+    "node": "12.x"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
@@ -26,8 +29,9 @@
     "typescript": "^4.0.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
     "build": "react-scripts build",
+    "prod": "serve -s build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
@@ -50,6 +54,7 @@
   },
   "devDependencies": {
     "@types/minimatch": "^3.0.3",
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "serve": "^11.3.2"
   }
 }
